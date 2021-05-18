@@ -66,8 +66,8 @@ namespace MovieHub
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox1.Image = global::MovieHub.Properties.Resources.movie_hub_logo_badge___orig;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(537, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -87,7 +87,7 @@ namespace MovieHub
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::MovieHub.Properties.Resources.visa_PNG10;
             this.pictureBox2.Location = new System.Drawing.Point(136, 230);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 94);
@@ -97,7 +97,7 @@ namespace MovieHub
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::MovieHub.Properties.Resources.Master_Card_Blue_icon;
             this.pictureBox3.Location = new System.Drawing.Point(283, 230);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(111, 94);

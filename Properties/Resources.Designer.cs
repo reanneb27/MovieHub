@@ -59,5 +59,55 @@ namespace MovieHub.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Master_Card_Blue_icon {
+            get {
+                object obj = ResourceManager.GetObject("Master-Card-Blue-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_hub_logo_badge___orig {
+            get {
+                object obj = ResourceManager.GetObject("movie_hub_logo_badge - orig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_hub_logo_badge___orig1 {
+            get {
+                object obj = ResourceManager.GetObject("movie_hub_logo_badge - orig1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_hub_logo_badge___white {
+            get {
+                object obj = ResourceManager.GetObject("movie_hub_logo_badge - white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visa_PNG10 {
+            get {
+                object obj = ResourceManager.GetObject("visa_PNG10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
