@@ -31,11 +31,12 @@ namespace MovieHub
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_Profile = new System.Windows.Forms.PictureBox();
+            this.btn_Search = new System.Windows.Forms.PictureBox();
+            this.link_SignOut = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Search)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -49,25 +50,38 @@ namespace MovieHub
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // btn_Profile
             // 
-            this.pictureBox2.Image = global::MovieHub.Properties.Resources.profile_icon_png_898;
-            this.pictureBox2.Location = new System.Drawing.Point(931, 66);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 37);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
+            this.btn_Profile.Image = global::MovieHub.Properties.Resources.profile_icon_png_898;
+            this.btn_Profile.Location = new System.Drawing.Point(931, 75);
+            this.btn_Profile.Name = "btn_Profile";
+            this.btn_Profile.Size = new System.Drawing.Size(41, 37);
+            this.btn_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Profile.TabIndex = 27;
+            this.btn_Profile.TabStop = false;
             // 
-            // pictureBox3
+            // btn_Search
             // 
-            this.pictureBox3.Image = global::MovieHub.Properties.Resources.search_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(884, 66);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
+            this.btn_Search.Image = global::MovieHub.Properties.Resources.search_icon;
+            this.btn_Search.Location = new System.Drawing.Point(874, 75);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(41, 37);
+            this.btn_Search.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Search.TabIndex = 27;
+            this.btn_Search.TabStop = false;
+            // 
+            // link_SignOut
+            // 
+            this.link_SignOut.AutoSize = true;
+            this.link_SignOut.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.link_SignOut.LinkColor = System.Drawing.Color.Red;
+            this.link_SignOut.Location = new System.Drawing.Point(902, 126);
+            this.link_SignOut.Name = "link_SignOut";
+            this.link_SignOut.Size = new System.Drawing.Size(70, 18);
+            this.link_SignOut.TabIndex = 28;
+            this.link_SignOut.TabStop = true;
+            this.link_SignOut.Text = "Sign Out";
+            this.link_SignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_SignOut_LinkClicked);
             // 
             // Homepage
             // 
@@ -76,24 +90,27 @@ namespace MovieHub
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.link_SignOut);
+            this.Controls.Add(this.btn_Search);
+            this.Controls.Add(this.btn_Profile);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Search)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btn_Profile;
+        private System.Windows.Forms.PictureBox btn_Search;
+        private System.Windows.Forms.LinkLabel link_SignOut;
     }
 }

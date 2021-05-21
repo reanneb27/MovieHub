@@ -1,7 +1,7 @@
 ﻿
 namespace MovieHub
 {
-    partial class Form2
+    partial class SignUpForm3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,17 @@ namespace MovieHub
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm3));
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_Visa = new System.Windows.Forms.PictureBox();
+            this.btn_MasterCard = new System.Windows.Forms.PictureBox();
+            this.link_Back = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Visa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MasterCard)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -85,45 +86,61 @@ namespace MovieHub
             this.label2.TabIndex = 27;
             this.label2.Text = "Setup your payment";
             // 
-            // pictureBox2
+            // btn_Visa
             // 
-            this.pictureBox2.Image = global::MovieHub.Properties.Resources.visa_PNG10;
-            this.pictureBox2.Location = new System.Drawing.Point(136, 230);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 94);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
+            this.btn_Visa.Image = global::MovieHub.Properties.Resources.visa_PNG10;
+            this.btn_Visa.Location = new System.Drawing.Point(136, 230);
+            this.btn_Visa.Name = "btn_Visa";
+            this.btn_Visa.Size = new System.Drawing.Size(111, 94);
+            this.btn_Visa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Visa.TabIndex = 28;
+            this.btn_Visa.TabStop = false;
+            this.btn_Visa.Click += new System.EventHandler(this.btn_Visa_Click);
             // 
-            // pictureBox3
+            // btn_MasterCard
             // 
-            this.pictureBox3.Image = global::MovieHub.Properties.Resources.Master_Card_Blue_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(283, 230);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(111, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
+            this.btn_MasterCard.Image = global::MovieHub.Properties.Resources.Master_Card_Blue_icon;
+            this.btn_MasterCard.Location = new System.Drawing.Point(283, 230);
+            this.btn_MasterCard.Name = "btn_MasterCard";
+            this.btn_MasterCard.Size = new System.Drawing.Size(111, 94);
+            this.btn_MasterCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_MasterCard.TabIndex = 28;
+            this.btn_MasterCard.TabStop = false;
+            this.btn_MasterCard.Click += new System.EventHandler(this.btn_MasterCard_Click);
             // 
-            // Form2
+            // link_Back
+            // 
+            this.link_Back.AutoSize = true;
+            this.link_Back.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.link_Back.LinkColor = System.Drawing.Color.Red;
+            this.link_Back.Location = new System.Drawing.Point(28, 87);
+            this.link_Back.Name = "link_Back";
+            this.link_Back.Size = new System.Drawing.Size(50, 18);
+            this.link_Back.TabIndex = 29;
+            this.link_Back.TabStop = true;
+            this.link_Back.Text = "BACK";
+            this.link_Back.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Back_LinkClicked);
+            // 
+            // SignUpForm3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(534, 433);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.link_Back);
+            this.Controls.Add(this.btn_MasterCard);
+            this.Controls.Add(this.btn_Visa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "SignUpForm3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub | Sign Up";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Visa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MasterCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,7 +152,8 @@ namespace MovieHub
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btn_Visa;
+        private System.Windows.Forms.PictureBox btn_MasterCard;
+        private System.Windows.Forms.LinkLabel link_Back;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace MovieHub
 {
-    partial class SignUpForm
+    partial class SignUpForm1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,22 @@ namespace MovieHub
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm1));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_FirstName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_LastName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btn_Submit = new System.Windows.Forms.Button();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.btn_Continue = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,9 +52,10 @@ namespace MovieHub
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_MobileNum = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.link_Back = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,7 +100,7 @@ namespace MovieHub
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_FirstName);
             this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(78, 201);
             this.panel1.Name = "panel1";
@@ -107,17 +108,17 @@ namespace MovieHub
             this.panel1.Size = new System.Drawing.Size(179, 40);
             this.panel1.TabIndex = 4;
             // 
-            // textBox1
+            // txt_FirstName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(10, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 18);
-            this.textBox1.TabIndex = 1;
+            this.txt_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_FirstName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_FirstName.ForeColor = System.Drawing.Color.White;
+            this.txt_FirstName.Location = new System.Drawing.Point(10, 10);
+            this.txt_FirstName.Name = "txt_FirstName";
+            this.txt_FirstName.Size = new System.Drawing.Size(159, 18);
+            this.txt_FirstName.TabIndex = 1;
             // 
             // label3
             // 
@@ -133,7 +134,7 @@ namespace MovieHub
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txt_LastName);
             this.panel2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel2.Location = new System.Drawing.Point(280, 201);
             this.panel2.Name = "panel2";
@@ -141,17 +142,17 @@ namespace MovieHub
             this.panel2.Size = new System.Drawing.Size(179, 40);
             this.panel2.TabIndex = 4;
             // 
-            // textBox2
+            // txt_LastName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(10, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 18);
-            this.textBox2.TabIndex = 1;
+            this.txt_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_LastName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_LastName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_LastName.ForeColor = System.Drawing.Color.White;
+            this.txt_LastName.Location = new System.Drawing.Point(10, 10);
+            this.txt_LastName.Name = "txt_LastName";
+            this.txt_LastName.Size = new System.Drawing.Size(159, 18);
+            this.txt_LastName.TabIndex = 1;
             // 
             // label4
             // 
@@ -167,7 +168,7 @@ namespace MovieHub
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txt_Email);
             this.panel3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel3.Location = new System.Drawing.Point(78, 296);
             this.panel3.Name = "panel3";
@@ -175,17 +176,17 @@ namespace MovieHub
             this.panel3.Size = new System.Drawing.Size(381, 40);
             this.panel3.TabIndex = 4;
             // 
-            // textBox3
+            // txt_Email
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(10, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(361, 18);
-            this.textBox3.TabIndex = 1;
+            this.txt_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Email.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Email.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Email.ForeColor = System.Drawing.Color.White;
+            this.txt_Email.Location = new System.Drawing.Point(10, 10);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(361, 18);
+            this.txt_Email.TabIndex = 1;
             // 
             // label5
             // 
@@ -201,7 +202,7 @@ namespace MovieHub
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.txt_Password);
             this.panel4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel4.Location = new System.Drawing.Point(78, 387);
             this.panel4.Name = "panel4";
@@ -209,30 +210,32 @@ namespace MovieHub
             this.panel4.Size = new System.Drawing.Size(381, 40);
             this.panel4.TabIndex = 4;
             // 
-            // textBox4
+            // txt_Password
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(10, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(361, 18);
-            this.textBox4.TabIndex = 1;
+            this.txt_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Password.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Password.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Password.ForeColor = System.Drawing.Color.White;
+            this.txt_Password.Location = new System.Drawing.Point(10, 10);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(361, 18);
+            this.txt_Password.TabIndex = 1;
             // 
-            // btn_Submit
+            // btn_Continue
             // 
-            this.btn_Submit.BackColor = System.Drawing.Color.Red;
-            this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Submit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Submit.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.Location = new System.Drawing.Point(78, 579);
-            this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.Size = new System.Drawing.Size(381, 42);
-            this.btn_Submit.TabIndex = 5;
-            this.btn_Submit.Text = "CONTINUE";
-            this.btn_Submit.UseVisualStyleBackColor = false;
+            this.btn_Continue.BackColor = System.Drawing.Color.Red;
+            this.btn_Continue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Continue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Continue.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Continue.ForeColor = System.Drawing.Color.White;
+            this.btn_Continue.Location = new System.Drawing.Point(78, 579);
+            this.btn_Continue.Name = "btn_Continue";
+            this.btn_Continue.Size = new System.Drawing.Size(381, 42);
+            this.btn_Continue.TabIndex = 5;
+            this.btn_Continue.Text = "CONTINUE";
+            this.btn_Continue.UseVisualStyleBackColor = false;
+            this.btn_Continue.Click += new System.EventHandler(this.btn_Continue_Click_1);
             // 
             // label6
             // 
@@ -303,7 +306,7 @@ namespace MovieHub
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.txt_MobileNum);
             this.panel5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel5.Location = new System.Drawing.Point(78, 482);
             this.panel5.Name = "panel5";
@@ -311,17 +314,17 @@ namespace MovieHub
             this.panel5.Size = new System.Drawing.Size(381, 40);
             this.panel5.TabIndex = 4;
             // 
-            // textBox5
+            // txt_MobileNum
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(10, 10);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(361, 18);
-            this.textBox5.TabIndex = 1;
+            this.txt_MobileNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_MobileNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_MobileNum.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_MobileNum.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_MobileNum.ForeColor = System.Drawing.Color.White;
+            this.txt_MobileNum.Location = new System.Drawing.Point(10, 10);
+            this.txt_MobileNum.Name = "txt_MobileNum";
+            this.txt_MobileNum.Size = new System.Drawing.Size(361, 18);
+            this.txt_MobileNum.TabIndex = 1;
             // 
             // label12
             // 
@@ -345,18 +348,32 @@ namespace MovieHub
             this.label13.TabIndex = 2;
             this.label13.Text = "Create your account";
             // 
-            // SignUpForm
+            // link_Back
+            // 
+            this.link_Back.AutoSize = true;
+            this.link_Back.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.link_Back.LinkColor = System.Drawing.Color.Red;
+            this.link_Back.Location = new System.Drawing.Point(23, 80);
+            this.link_Back.Name = "link_Back";
+            this.link_Back.Size = new System.Drawing.Size(50, 18);
+            this.link_Back.TabIndex = 8;
+            this.link_Back.TabStop = true;
+            this.link_Back.Text = "BACK";
+            this.link_Back.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Back_LinkClicked);
+            // 
+            // SignUpForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(534, 661);
+            this.Controls.Add(this.link_Back);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btn_Submit);
+            this.Controls.Add(this.btn_Continue);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -373,7 +390,7 @@ namespace MovieHub
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "SignUpForm";
+            this.Name = "SignUpForm1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub | Sign Up";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -398,17 +415,17 @@ namespace MovieHub
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_FirstName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_LastName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button btn_Submit;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Button btn_Continue;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -416,8 +433,9 @@ namespace MovieHub
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_MobileNum;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.LinkLabel link_Back;
     }
 }

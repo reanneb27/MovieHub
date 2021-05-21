@@ -1,7 +1,7 @@
 ﻿
 namespace MovieHub
 {
-    partial class Form3
+    partial class SignUpForm4
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace MovieHub
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm4));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,34 +38,38 @@ namespace MovieHub
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_CardNo = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_ZipCode = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_LastName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_FirstName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Finish = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_CVV = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_Month = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txt_Year = new System.Windows.Forms.TextBox();
+            this.link_Back = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -148,7 +152,7 @@ namespace MovieHub
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.txt_CardNo);
             this.panel5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel5.Location = new System.Drawing.Point(71, 508);
             this.panel5.Name = "panel5";
@@ -156,22 +160,22 @@ namespace MovieHub
             this.panel5.Size = new System.Drawing.Size(381, 40);
             this.panel5.TabIndex = 36;
             // 
-            // textBox5
+            // txt_CardNo
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(10, 10);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(361, 18);
-            this.textBox5.TabIndex = 1;
+            this.txt_CardNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_CardNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_CardNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_CardNo.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_CardNo.ForeColor = System.Drawing.Color.White;
+            this.txt_CardNo.Location = new System.Drawing.Point(10, 10);
+            this.txt_CardNo.Name = "txt_CardNo";
+            this.txt_CardNo.Size = new System.Drawing.Size(361, 18);
+            this.txt_CardNo.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.txt_ZipCode);
             this.panel4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel4.Location = new System.Drawing.Point(71, 411);
             this.panel4.Name = "panel4";
@@ -179,22 +183,22 @@ namespace MovieHub
             this.panel4.Size = new System.Drawing.Size(381, 40);
             this.panel4.TabIndex = 37;
             // 
-            // textBox4
+            // txt_ZipCode
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(10, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(361, 18);
-            this.textBox4.TabIndex = 1;
+            this.txt_ZipCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_ZipCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_ZipCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_ZipCode.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_ZipCode.ForeColor = System.Drawing.Color.White;
+            this.txt_ZipCode.Location = new System.Drawing.Point(10, 10);
+            this.txt_ZipCode.Name = "txt_ZipCode";
+            this.txt_ZipCode.Size = new System.Drawing.Size(361, 18);
+            this.txt_ZipCode.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txt_LastName);
             this.panel3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel3.Location = new System.Drawing.Point(71, 320);
             this.panel3.Name = "panel3";
@@ -202,22 +206,22 @@ namespace MovieHub
             this.panel3.Size = new System.Drawing.Size(381, 40);
             this.panel3.TabIndex = 38;
             // 
-            // textBox3
+            // txt_LastName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(10, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(361, 18);
-            this.textBox3.TabIndex = 1;
+            this.txt_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_LastName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_LastName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_LastName.ForeColor = System.Drawing.Color.White;
+            this.txt_LastName.Location = new System.Drawing.Point(10, 10);
+            this.txt_LastName.Name = "txt_LastName";
+            this.txt_LastName.Size = new System.Drawing.Size(361, 18);
+            this.txt_LastName.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_FirstName);
             this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(71, 225);
             this.panel1.Name = "panel1";
@@ -225,17 +229,17 @@ namespace MovieHub
             this.panel1.Size = new System.Drawing.Size(381, 40);
             this.panel1.TabIndex = 40;
             // 
-            // textBox1
+            // txt_FirstName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(10, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 18);
-            this.textBox1.TabIndex = 1;
+            this.txt_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_FirstName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_FirstName.ForeColor = System.Drawing.Color.White;
+            this.txt_FirstName.Location = new System.Drawing.Point(10, 10);
+            this.txt_FirstName.Name = "txt_FirstName";
+            this.txt_FirstName.Size = new System.Drawing.Size(361, 18);
+            this.txt_FirstName.TabIndex = 1;
             // 
             // label11
             // 
@@ -303,29 +307,6 @@ namespace MovieHub
             this.label7.TabIndex = 31;
             this.label7.Text = "Expiration Date (MM/YY)";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(71, 604);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(173, 40);
-            this.panel2.TabIndex = 36;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(10, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 18);
-            this.textBox2.TabIndex = 1;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -337,18 +318,19 @@ namespace MovieHub
             this.label8.TabIndex = 41;
             this.label8.Text = "Please enter valid date";
             // 
-            // button4
+            // btn_Finish
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(71, 695);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(381, 42);
-            this.button4.TabIndex = 47;
-            this.button4.Text = "CONTINUE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_Finish.BackColor = System.Drawing.Color.Red;
+            this.btn_Finish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Finish.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Finish.ForeColor = System.Drawing.Color.White;
+            this.btn_Finish.Location = new System.Drawing.Point(71, 695);
+            this.btn_Finish.Name = "btn_Finish";
+            this.btn_Finish.Size = new System.Drawing.Size(381, 42);
+            this.btn_Finish.TabIndex = 47;
+            this.btn_Finish.Text = "FINISH";
+            this.btn_Finish.UseVisualStyleBackColor = false;
+            this.btn_Finish.Click += new System.EventHandler(this.btn_Finish_Click);
             // 
             // label14
             // 
@@ -364,7 +346,7 @@ namespace MovieHub
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.panel6.Controls.Add(this.textBox6);
+            this.panel6.Controls.Add(this.txt_CVV);
             this.panel6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel6.Location = new System.Drawing.Point(279, 604);
             this.panel6.Name = "panel6";
@@ -372,17 +354,17 @@ namespace MovieHub
             this.panel6.Size = new System.Drawing.Size(173, 40);
             this.panel6.TabIndex = 36;
             // 
-            // textBox6
+            // txt_CVV
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(10, 10);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(153, 18);
-            this.textBox6.TabIndex = 1;
+            this.txt_CVV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_CVV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_CVV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_CVV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_CVV.ForeColor = System.Drawing.Color.White;
+            this.txt_CVV.Location = new System.Drawing.Point(10, 10);
+            this.txt_CVV.Name = "txt_CVV";
+            this.txt_CVV.Size = new System.Drawing.Size(153, 18);
+            this.txt_CVV.TabIndex = 1;
             // 
             // label15
             // 
@@ -395,21 +377,82 @@ namespace MovieHub
             this.label15.TabIndex = 41;
             this.label15.Text = "Please enter valid security code";
             // 
-            // Form3
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.panel2.Controls.Add(this.txt_Month);
+            this.panel2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel2.Location = new System.Drawing.Point(71, 604);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
+            this.panel2.Size = new System.Drawing.Size(80, 40);
+            this.panel2.TabIndex = 36;
+            // 
+            // txt_Month
+            // 
+            this.txt_Month.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_Month.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Month.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Month.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Month.ForeColor = System.Drawing.Color.White;
+            this.txt_Month.Location = new System.Drawing.Point(10, 10);
+            this.txt_Month.Name = "txt_Month";
+            this.txt_Month.Size = new System.Drawing.Size(60, 18);
+            this.txt_Month.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.panel7.Controls.Add(this.txt_Year);
+            this.panel7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel7.Location = new System.Drawing.Point(164, 604);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(10);
+            this.panel7.Size = new System.Drawing.Size(80, 40);
+            this.panel7.TabIndex = 36;
+            // 
+            // txt_Year
+            // 
+            this.txt_Year.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(79)))), ((int)(((byte)(84)))));
+            this.txt_Year.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Year.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Year.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Year.ForeColor = System.Drawing.Color.White;
+            this.txt_Year.Location = new System.Drawing.Point(10, 10);
+            this.txt_Year.Name = "txt_Year";
+            this.txt_Year.Size = new System.Drawing.Size(60, 18);
+            this.txt_Year.TabIndex = 1;
+            // 
+            // link_Back
+            // 
+            this.link_Back.AutoSize = true;
+            this.link_Back.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.link_Back.LinkColor = System.Drawing.Color.Red;
+            this.link_Back.Location = new System.Drawing.Point(29, 85);
+            this.link_Back.Name = "link_Back";
+            this.link_Back.Size = new System.Drawing.Size(50, 18);
+            this.link_Back.TabIndex = 48;
+            this.link_Back.TabStop = true;
+            this.link_Back.Text = "BACK";
+            this.link_Back.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Back_LinkClicked);
+            // 
+            // SignUpForm4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(534, 791);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.link_Back);
+            this.Controls.Add(this.btn_Finish);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label14);
@@ -425,7 +468,7 @@ namespace MovieHub
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form3";
+            this.Name = "SignUpForm4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub | Sign Up";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -437,10 +480,12 @@ namespace MovieHub
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,26 +501,29 @@ namespace MovieHub
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_CardNo;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_ZipCode;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_LastName;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_FirstName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Finish;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_CVV;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txt_Month;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox txt_Year;
+        private System.Windows.Forms.LinkLabel link_Back;
     }
 }

@@ -8,21 +8,21 @@ using System.Windows.Forms;
 
 namespace MovieHub
 {
-    public partial class LoginForm : Form
+    public partial class SignUpForm2 : Form
     {
-        public LoginForm()
+        public SignUpForm2()
         {
             InitializeComponent();
         }
 
-        private void btn_SignIn_Click(object sender, EventArgs e)
+        private void btn_Continue_Click(object sender, EventArgs e)
         {
-            Homepage Homepage = new Homepage();
-            Homepage.Show();
+            SignUpForm3 SignUpForm3 = new SignUpForm3();
+            SignUpForm3.Show();
             this.Hide();
         }
 
-        private void link_SignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignUpForm1 SignUpForm1 = new SignUpForm1();
             SignUpForm1.Show();
