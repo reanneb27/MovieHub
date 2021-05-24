@@ -36,7 +36,6 @@ namespace MovieHub
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Standard = new System.Windows.Forms.Button();
             this.btn_Premium = new System.Windows.Forms.Button();
-            this.btn_Continue = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.link_Back = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,6 +75,7 @@ namespace MovieHub
             this.btn_Basic.TabIndex = 17;
             this.btn_Basic.Text = "Basic";
             this.btn_Basic.UseVisualStyleBackColor = false;
+            this.btn_Basic.Click += new System.EventHandler(this.btn_Basic_Click);
             // 
             // label10
             // 
@@ -100,6 +100,7 @@ namespace MovieHub
             this.btn_Standard.TabIndex = 17;
             this.btn_Standard.Text = "Standard";
             this.btn_Standard.UseVisualStyleBackColor = false;
+            this.btn_Standard.Click += new System.EventHandler(this.btn_Standard_Click);
             // 
             // btn_Premium
             // 
@@ -113,21 +114,7 @@ namespace MovieHub
             this.btn_Premium.TabIndex = 17;
             this.btn_Premium.Text = "Premium";
             this.btn_Premium.UseVisualStyleBackColor = false;
-            // 
-            // btn_Continue
-            // 
-            this.btn_Continue.BackColor = System.Drawing.Color.Red;
-            this.btn_Continue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Continue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Continue.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Continue.ForeColor = System.Drawing.Color.White;
-            this.btn_Continue.Location = new System.Drawing.Point(86, 472);
-            this.btn_Continue.Name = "btn_Continue";
-            this.btn_Continue.Size = new System.Drawing.Size(350, 42);
-            this.btn_Continue.TabIndex = 17;
-            this.btn_Continue.Text = "CONTINUE";
-            this.btn_Continue.UseVisualStyleBackColor = false;
-            this.btn_Continue.Click += new System.EventHandler(this.btn_Continue_Click);
+            this.btn_Premium.Click += new System.EventHandler(this.btn_Premium_Click);
             // 
             // pictureBox1
             // 
@@ -158,11 +145,10 @@ namespace MovieHub
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
-            this.ClientSize = new System.Drawing.Size(534, 561);
+            this.ClientSize = new System.Drawing.Size(534, 482);
             this.Controls.Add(this.link_Back);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.btn_Continue);
             this.Controls.Add(this.btn_Premium);
             this.Controls.Add(this.btn_Standard);
             this.Controls.Add(this.btn_Basic);
@@ -186,7 +172,6 @@ namespace MovieHub
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_Standard;
         private System.Windows.Forms.Button btn_Premium;
-        private System.Windows.Forms.Button btn_Continue;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel link_Back;
     }

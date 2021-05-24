@@ -15,17 +15,31 @@ namespace MovieHub
             InitializeComponent();
         }
 
-        private void btn_Continue_Click(object sender, EventArgs e)
+        private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignUpForm1 SignUpForm1 = new SignUpForm1();
+            SignUpForm1.Show();
+            this.Hide();
+        }
+
+        private void btn_Basic_Click(object sender, EventArgs e)
         {
             SignUpForm3 SignUpForm3 = new SignUpForm3();
             SignUpForm3.Show();
             this.Hide();
         }
 
-        private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btn_Standard_Click(object sender, EventArgs e)
         {
-            SignUpForm1 SignUpForm1 = new SignUpForm1();
-            SignUpForm1.Show();
+            SignUpForm3 SignUpForm3 = new SignUpForm3();
+            SignUpForm3.Show();
+            this.Hide();
+        }
+
+        private void btn_Premium_Click(object sender, EventArgs e)
+        {
+            SignUpForm3 SignUpForm3 = new SignUpForm3();
+            SignUpForm3.Show();
             this.Hide();
         }
     }

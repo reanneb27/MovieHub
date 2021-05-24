@@ -88,6 +88,7 @@ namespace MovieHub
             // 
             // btn_Visa
             // 
+            this.btn_Visa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Visa.Image = global::MovieHub.Properties.Resources.visa_PNG10;
             this.btn_Visa.Location = new System.Drawing.Point(136, 230);
             this.btn_Visa.Name = "btn_Visa";
@@ -99,6 +100,7 @@ namespace MovieHub
             // 
             // btn_MasterCard
             // 
+            this.btn_MasterCard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MasterCard.Image = global::MovieHub.Properties.Resources.Master_Card_Blue_icon;
             this.btn_MasterCard.Location = new System.Drawing.Point(283, 230);
             this.btn_MasterCard.Name = "btn_MasterCard";
