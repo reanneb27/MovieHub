@@ -18,14 +18,14 @@ namespace MovieHub
         private void btn_Visa_Click(object sender, EventArgs e)
         {
             string payMethod = "Visa";
-            SignUpForm4 SignUpForm4 = new SignUpForm4();
-            SignUpForm4.Show();
+            Homepage Homepage = new Homepage();
+            Homepage.Show();
             this.Hide();
         }
         private void btn_MasterCard_Click(object sender, EventArgs e)
         {
             string payMethod = "MasterCard";
-            SignUpForm4 SignUpForm4 = new SignUpForm4();
+            Homepage SignUpForm4 = new Homepage();
             SignUpForm4.Show();
             this.Hide();
         }
