@@ -10,39 +10,52 @@ namespace MovieHub
 {
     public partial class SignUpForm2 : Form
     {
+
+        public static string signUpInfoPlan = "";
+
         public SignUpForm2()
         {
             InitializeComponent();
         }
 
+        //private void SignUpForm2_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    SignUpForm1.Show();
+        //    this.Dispose();
+        //}
+
         private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            SignUpForm1 SignUpForm1 = new SignUpForm1();
-            SignUpForm1.Show();
-            this.Hide();
+            //SignUpForm1.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void btn_Basic_Click(object sender, EventArgs e)
         {
-            SignUpForm3 SignUpForm3 = new SignUpForm3();
-            SignUpForm3.Show();
+            signUpInfoPlan = "Basic";
+            GoToForm3();
             this.Hide();
         }
 
         private void btn_Standard_Click(object sender, EventArgs e)
         {
-            string plan = "Standard";
-            SignUpForm3 SignUpForm3 = new SignUpForm3();
-            SignUpForm3.Show();
+            signUpInfoPlan = "Standard";
+            GoToForm3();
             this.Hide();
         }
 
         private void btn_Premium_Click(object sender, EventArgs e)
         {
-            string plan = "Premium";
-            SignUpForm3 SignUpForm3 = new SignUpForm3();
-            SignUpForm3.Show();
+            signUpInfoPlan = "Premium";
+            GoToForm3();
             this.Hide();
+        }
+
+        private void GoToForm3()
+        {
+            SignUpForm3 SignUpForm3 = new SignUpForm3();
+            this.Hide();
+            SignUpForm3.ShowDialog();
         }
     }
 }

@@ -12,6 +12,8 @@ namespace MovieHub
     public partial class LoginForm : Form
     {
 
+        public static (string, string, string, string, string) signUpInfo;
+
         SqlConnection connectionString = new SqlConnection(@"Data Source=.;Initial Catalog=MovieHub;Integrated Security=True");
         SqlCommand cmd;
         SqlDataAdapter adapter;
@@ -45,8 +47,8 @@ namespace MovieHub
         private void link_SignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignUpForm1 SignUpForm1 = new SignUpForm1();
-            SignUpForm1.Show();
             this.Hide();
+            SignUpForm1.ShowDialog();
         }
 
         private void txt_Username_Click(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace MovieHub
 
         private void txt_Password_Click(object sender, EventArgs e)
         {
+            txt_Password.UseSystemPasswordChar = true;
             txt_Password.Clear();
         }
     }

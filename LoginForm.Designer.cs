@@ -66,6 +66,7 @@ namespace MovieHub
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.Size = new System.Drawing.Size(240, 18);
             this.txt_Username.TabIndex = 0;
+            this.txt_Username.Text = "Username";
             this.txt_Username.Click += new System.EventHandler(this.txt_Username_Click);
             // 
             // panel1
@@ -102,8 +103,8 @@ namespace MovieHub
             this.txt_Password.Location = new System.Drawing.Point(10, 10);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(240, 18);
-            this.txt_Password.TabIndex = 0;
-            this.txt_Password.UseSystemPasswordChar = true;
+            this.txt_Password.TabIndex = 1;
+            this.txt_Password.Text = "Password";
             this.txt_Password.Click += new System.EventHandler(this.txt_Password_Click);
             // 
             // label2
@@ -125,7 +126,7 @@ namespace MovieHub
             this.link_SignUp.Location = new System.Drawing.Point(196, 429);
             this.link_SignUp.Name = "link_SignUp";
             this.link_SignUp.Size = new System.Drawing.Size(59, 17);
-            this.link_SignUp.TabIndex = 0;
+            this.link_SignUp.TabIndex = 3;
             this.link_SignUp.TabStop = true;
             this.link_SignUp.Text = "Sign Up";
             this.link_SignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_SignUp_LinkClicked);
@@ -149,7 +150,7 @@ namespace MovieHub
             this.btn_SignIn.Location = new System.Drawing.Point(70, 352);
             this.btn_SignIn.Name = "btn_SignIn";
             this.btn_SignIn.Size = new System.Drawing.Size(260, 42);
-            this.btn_SignIn.TabIndex = 0;
+            this.btn_SignIn.TabIndex = 2;
             this.btn_SignIn.Text = "SIGN IN";
             this.btn_SignIn.UseVisualStyleBackColor = false;
             this.btn_SignIn.Click += new System.EventHandler(this.btn_SignIn_Click);
@@ -186,10 +187,10 @@ namespace MovieHub
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_Username;
+        internal System.Windows.Forms.TextBox txt_Username;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_Password;
+        internal System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel link_SignUp;
         private System.Windows.Forms.PictureBox pictureBox1;

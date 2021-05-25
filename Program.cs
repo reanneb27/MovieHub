@@ -17,7 +17,8 @@ namespace MovieHub
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            LoginForm baseForm = new LoginForm();
+            Application.Run(baseForm);
         }
     }
 }

@@ -159,6 +159,7 @@ namespace MovieHub
             this.Name = "SignUpForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub | Sign Up";
+            //this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignUpForm2_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
