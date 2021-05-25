@@ -31,6 +31,7 @@ namespace MovieHub
 
         private void btn_Standard_Click(object sender, EventArgs e)
         {
+            string plan = "Standard";
             SignUpForm3 SignUpForm3 = new SignUpForm3();
             SignUpForm3.Show();
             this.Hide();
@@ -38,6 +39,7 @@ namespace MovieHub
 
         private void btn_Premium_Click(object sender, EventArgs e)
         {
+            string plan = "Premium";
             SignUpForm3 SignUpForm3 = new SignUpForm3();
             SignUpForm3.Show();
             this.Hide();

@@ -34,9 +34,11 @@ namespace MovieHub
             this.btn_Profile = new System.Windows.Forms.PictureBox();
             this.btn_Search = new System.Windows.Forms.PictureBox();
             this.link_SignOut = new System.Windows.Forms.LinkLabel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Search)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -59,6 +61,7 @@ namespace MovieHub
             this.btn_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Profile.TabIndex = 27;
             this.btn_Profile.TabStop = false;
+            this.btn_Profile.Click += new System.EventHandler(this.btn_Profile_Click);
             // 
             // btn_Search
             // 
@@ -83,6 +86,15 @@ namespace MovieHub
             this.link_SignOut.Text = "Sign Out";
             this.link_SignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_SignOut_LinkClicked);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 174);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(960, 475);
+            this.dataGridView1.TabIndex = 29;
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -90,6 +102,7 @@ namespace MovieHub
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(9)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.link_SignOut);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.btn_Profile);
@@ -98,9 +111,11 @@ namespace MovieHub
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub";
+            this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Search)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +127,6 @@ namespace MovieHub
         private System.Windows.Forms.PictureBox btn_Profile;
         private System.Windows.Forms.PictureBox btn_Search;
         private System.Windows.Forms.LinkLabel link_SignOut;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
