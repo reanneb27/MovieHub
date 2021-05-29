@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace MovieHub
 {
@@ -51,6 +53,22 @@ namespace MovieHub
             string payMethod = signUpInfoPayMethod;
 
             // SQL Query to Insert data
+            SqlConnection sqlConn = new SqlConnection("Data Source =.; Initial Catalog = MovieHub; Integrated Security = True");
+            SqlCommand sqlCmd;
+            SqlDataReader sqlDR;
+            sqlCmd = new SqlCommand("SELECT COUNT(client_id) from client", sqlConn);
+            sqlConn.Open();
+            sqlDR = sqlCmd.ExecuteReader();
+            sqlConn.Close();
+            sqlDR.Read();
+            int currentNumber;
+            int.TryParse((string)sqlDR.GetValue(0), out currentNumber);
+            sqlCmd.CommandText = $"INSERT INTO client VALUES ({202100000 + currentNumber}, {firstname},{lastname},{email},{mobileNum})";
+            sqlConn.Open();
+            sqlCmd.ExecuteNonQuery();
+            sqlCmd.CommandText = $"INSERT INTO login VALUES ({202100000 + currentNumber},{username},{password}";
+            sqlCmd.ExecuteNonQuery();
+            sqlConn.Close();
 
             LoginForm LoginForm = new LoginForm();
             LoginForm.txt_Username.Text = username;

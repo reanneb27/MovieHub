@@ -33,7 +33,7 @@ namespace MovieHub
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.lnl_ChangeEmail = new System.Windows.Forms.Label();
+            this.lbl_ChangeEmail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_ChangePassword = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@ namespace MovieHub
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Back = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,16 +84,17 @@ namespace MovieHub
             this.label13.TabIndex = 36;
             this.label13.Text = "Email";
             // 
-            // lnl_ChangeEmail
+            // lbl_ChangeEmail
             // 
-            this.lnl_ChangeEmail.AutoSize = true;
-            this.lnl_ChangeEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lnl_ChangeEmail.ForeColor = System.Drawing.Color.Red;
-            this.lnl_ChangeEmail.Location = new System.Drawing.Point(600, 215);
-            this.lnl_ChangeEmail.Name = "lnl_ChangeEmail";
-            this.lnl_ChangeEmail.Size = new System.Drawing.Size(136, 16);
-            this.lnl_ChangeEmail.TabIndex = 37;
-            this.lnl_ChangeEmail.Text = "Change account email";
+            this.lbl_ChangeEmail.AutoSize = true;
+            this.lbl_ChangeEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_ChangeEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ChangeEmail.ForeColor = System.Drawing.Color.Red;
+            this.lbl_ChangeEmail.Location = new System.Drawing.Point(600, 215);
+            this.lbl_ChangeEmail.Name = "lbl_ChangeEmail";
+            this.lbl_ChangeEmail.Size = new System.Drawing.Size(136, 16);
+            this.lbl_ChangeEmail.TabIndex = 37;
+            this.lbl_ChangeEmail.Text = "Change account email";
             // 
             // label3
             // 
@@ -108,6 +110,7 @@ namespace MovieHub
             // lbl_ChangePassword
             // 
             this.lbl_ChangePassword.AutoSize = true;
+            this.lbl_ChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_ChangePassword.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_ChangePassword.ForeColor = System.Drawing.Color.Red;
             this.lbl_ChangePassword.Location = new System.Drawing.Point(600, 250);
@@ -130,6 +133,7 @@ namespace MovieHub
             // lbl_ChangePhone
             // 
             this.lbl_ChangePhone.AutoSize = true;
+            this.lbl_ChangePhone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_ChangePhone.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_ChangePhone.ForeColor = System.Drawing.Color.Red;
             this.lbl_ChangePhone.Location = new System.Drawing.Point(600, 289);
@@ -152,6 +156,7 @@ namespace MovieHub
             // lbl_MngPayment
             // 
             this.lbl_MngPayment.AutoSize = true;
+            this.lbl_MngPayment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_MngPayment.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_MngPayment.ForeColor = System.Drawing.Color.Red;
             this.lbl_MngPayment.Location = new System.Drawing.Point(599, 359);
@@ -166,7 +171,7 @@ namespace MovieHub
             this.btn_CancelMembership.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CancelMembership.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_CancelMembership.ForeColor = System.Drawing.Color.White;
-            this.btn_CancelMembership.Location = new System.Drawing.Point(571, 574);
+            this.btn_CancelMembership.Location = new System.Drawing.Point(599, 585);
             this.btn_CancelMembership.Name = "btn_CancelMembership";
             this.btn_CancelMembership.Size = new System.Drawing.Size(246, 42);
             this.btn_CancelMembership.TabIndex = 48;
@@ -187,6 +192,7 @@ namespace MovieHub
             // lbl_ChangePlan
             // 
             this.lbl_ChangePlan.AutoSize = true;
+            this.lbl_ChangePlan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_ChangePlan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_ChangePlan.ForeColor = System.Drawing.Color.Red;
             this.lbl_ChangePlan.Location = new System.Drawing.Point(600, 507);
@@ -231,6 +237,7 @@ namespace MovieHub
             // lbl_Back
             // 
             this.lbl_Back.AutoSize = true;
+            this.lbl_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_Back.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Back.ForeColor = System.Drawing.Color.Red;
             this.lbl_Back.Location = new System.Drawing.Point(23, 80);
@@ -238,6 +245,19 @@ namespace MovieHub
             this.lbl_Back.Size = new System.Drawing.Size(50, 18);
             this.lbl_Back.TabIndex = 50;
             this.lbl_Back.Text = "BACK";
+            this.lbl_Back.Click += new System.EventHandler(this.lbl_Back_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(599, 543);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 16);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Manage payment info";
             // 
             // Account
             // 
@@ -249,10 +269,11 @@ namespace MovieHub
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_CancelMembership);
             this.Controls.Add(this.lbl_ChangePlan);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_MngPayment);
             this.Controls.Add(this.lbl_ChangePhone);
             this.Controls.Add(this.lbl_ChangePassword);
-            this.Controls.Add(this.lnl_ChangeEmail);
+            this.Controls.Add(this.lbl_ChangeEmail);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -266,6 +287,7 @@ namespace MovieHub
             this.Name = "Account";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Hub | Account";
+            this.Load += new System.EventHandler(this.Account_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,7 +298,7 @@ namespace MovieHub
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lnl_ChangeEmail;
+        private System.Windows.Forms.Label lbl_ChangeEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_ChangePassword;
         private System.Windows.Forms.Label label5;
@@ -290,5 +312,6 @@ namespace MovieHub
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_Back;
+        private System.Windows.Forms.Label label4;
     }
 }

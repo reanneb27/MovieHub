@@ -40,7 +40,5 @@ namespace MovieHub
             Account.Show();
             this.Hide();
         }
-
-
     }
 }

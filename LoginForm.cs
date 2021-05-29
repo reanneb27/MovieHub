@@ -15,10 +15,9 @@ namespace MovieHub
         public static (string, string, string, string, string) signUpInfo;
 
         SqlConnection connectionString = new SqlConnection(@"Data Source=.;Initial Catalog=MovieHub;Integrated Security=True");
-        SqlCommand cmd;
+        SqlCommand wscmd;
         SqlDataAdapter adapter;
-        //ID variable used in Updating and Deleting Record  
-        int ID = 0;
+
         public LoginForm()
         {
             InitializeComponent();

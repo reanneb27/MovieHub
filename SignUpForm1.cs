@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace MovieHub
 {
     public partial class SignUpForm1 : Form
@@ -43,7 +44,8 @@ namespace MovieHub
 
         private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //LoginForm.Show();
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
             this.DialogResult = DialogResult.OK;
         }
     }

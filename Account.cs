@@ -14,5 +14,17 @@ namespace MovieHub
         {
             InitializeComponent();
         }
+
+        private void lbl_Back_Click(object sender, EventArgs e)
+        {
+            Homepage Homepage = new Homepage();
+            Homepage.Show();
+            this.Hide();
+        }
+
+        private void Account_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
